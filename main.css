@@ -1,51 +1,6 @@
-/*Colors added just to distinguish between parts for now*/
 body{
-	background-color: pink;
+	background-image: url("backgroundImage.jpg");
+	background-size: cover;
 	margin: 0;
 	padding: 0;
-}
-div{
-	float: left;
-}
-/*input{
-	background-color: rgb(255, 255, 255, .05);
-	border-color: rgb(255, 255, 255, .05);
-}
-transparent input field*/
-.sideNav{
-	background-color: #555;
-	border-radius: 5px;
-	float: right;
-	margin: 1%;
-	padding: 0;
-	text-align: center;
-	width: 15%;
-}
-strong{
-	font-weight: bolder;
-}
-.tool{
-	border-radius: 5px;
-	width: 90%;
-}
-.tools{
-	background-color: #888;
-	border-radius: 5px;
-	float: left;
-	padding: 1%;
-	margin: 1%;
-	text-align: center;
-	width: 8%;
-}
-ul{
-	list-style: none;
-}
-#newConcept{
-	background-color: blue;
-	border-color: blue;
-	border-radius: 5px;
-	font-size: 14pt;
-	padding-bottom: 1%;
-	padding-top: 1%;
-	width: 100%;
 }
