@@ -3,30 +3,34 @@
 <head>
 	<title>Practice Drawing</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<script type="text/javascript" src="angular.js"></script>
 </head>
 <body>
-	<div class="tools">
-		<!-- This is the where the toolbar will be -->
-		<!-- <button class="tool newData">+ New Data</button><br>this should only show up after main concept is created -->
-		<!-- When new data button is clicked, line connecting concept and data should be chosen -->
-		<!-- Line connecting data should have design options and options for direction as specified -->
-		<!-- The shape, fill, and font tools should be available for concept bubble and data -->
-		<button class="tool">Shape</button><br><!-- dropdown choice of shapes -->
-		<button class="tool">Fill</button><br><!-- dropdown choice of colors, with option to choose picture -->
-		<button class="tool">Font</button><!-- dropdown choice of fonts and dropdown of font colors -->
+<div id="drawside">
+	<div id="toolbar">
+		<!-- Styling tools should be up here -->
 	</div>
-	<div class="buildZone">
-		<canvas></canvas><!-- canvas for javascript to draw on -->
+	<button id="newdata">+ Data</button>
+	<div id="draftzone">
+		<!-- this is the part of the page where the concept maps will be created -->
 	</div>
-	<div class="sideNav">
-			<button id="newConcept">+ New Concept</button>
-			<button>Concepts</button><!-- collapsable list of concepts -->
-			<!-- This will be the list of concepts
-				 They will be in alphabetical order
-				 The order that they are in can be
-				 changed by the user.
-				 New ones will be added as the
-				 button is pressed. -->
+	<button id="cancelbtn">Cancel</button>
+	<button id="savebtn">Save</button>
+	<!-- When save button pressed:
+		user should be asked to input a pin number to protect that concept.
+		Concept can only be deleted by creator.
+		admin can also delete it with a "skeleton key" code -->
+</div>
+<div id="newnarch">
+	<!-- New concept button and list of concepts already made as well as a filter option -->
+	<button id="newconcept">+ Concept</button>
+	<div id="filterarch">
+		<!-- filter option here -->
 	</div>
+	<ul id="archive">
+		<!-- DOM to be used to list saved concepts as saved 
+			the concept should be listed by the name shown in concept bubble and should have an option to delete it.-->
+	</ul>
+</div>
 </body>
 </html>
